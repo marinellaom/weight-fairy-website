@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/userDetails.css"/>
+    <link rel="stylesheet" href="../css/tasks.css"/>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/userDetails.js"></script>
+    <script src="../js/tasks.js"></script>
+    <script src="../js/api-requests/api-client.js"></script>
+    <script src="../js/api-requests/api.js"></script>
+  
+
+
+    <title>YOUR ACCOUNT</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+   
+</head>
+<body>
+
+    <!-- 2 VECTOR IMAGE BACKGROUND -->
+    <img src="../images/exer1.png" class="img1">
+    <img src="../images/exer3.png" class="img2">
+
+
+
+        <!-- DATAS FROM DB -->
+        <p id= "outputJSON" class="mes"></p>
+        <!-- <table class= "dbTable" id="tableID"></table> -->
+    
+   
+
+    <div class = "backbox" >  </div>
+
+        <div class = "btnDiv">
+            
+            <!-- <button onclick="showD()" class="nameButton" id="nameButtonID">Haechan Lee</button>   -->
+
+            <!-- BUTTON TO GET & DISPLAY DATA FROM DATABASE  -->
+            <button onclick="getUserDetails()" class="nameButton" id="nameButtonID">YOUR ACCOUNT</button>
+
+        </div>
+
+        <div class="whiteDiv" id="userLayout1"></div>
+        <div class="textDiv" id="userLayout2">WEIGHT FAIRY</div>
+        <img src="../images/user2.png" class="img3" id="userLayout3">
+
+
+
+            
+             <!-- can't find what's wrong with this lol -->
+                <div id= "back" class="backbtn" > 
+                    <button onclick="backToUsers()" class="btn2" id="btnDetails" >Back</button>
+                </div>
+
+                <script>
+                    document.getElementById("back").style.display = "none";  //hide
+                  //"block"; //show
+                
+                </script>
+
+
+                 <!--SHOW TASK & GO BACK BUTTON -->  
+                 <div class="bt"><input type="button" value="Show Tasks" onclick="showTasks()" class="userTasks" id="showTasksID"/></div>
+                 <div class="gb"><a href="userDetails.html" class="goBack" id="goBackID">Go Back</a></div>
+
+
+                 <div class="TB" id="task-box"> <table class= "dbTable" id="tableID"></table> </div>
+                 <div class="TB2" id="task-box2"> 
+                    <ul class="w3-ul w3-large">
+                        <li>DAILY TASK TO REACH TARGET WEIGHT</li>
+                        <li>10 Push Ups</li>
+                        <li>10 Sit Ups</li>
+                        <li>10 Minutes Jogging</li>
+                        <li>3 Minutes Plank</li>    
+                        <li>Healthy Food Diet</li>
+                        <li>Eat Less Sweets</li>   
+                        <li>Stay Motivated</li>  
+                    </ul>
+                    <button onclick="hideTask()"id="hideID" style="color: crimson; font-weight: bold;">Exit</button>
+                </div>
+                       
+     
+                
+
+
+
+                 <script>
+                    document.getElementById("tableID").style.visibility = "hidden";
+                    document.getElementById("task-box").style.visibility = "hidden";  //hide
+                    document.getElementById("task-box2").style.visibility = "hidden";  //hide
+                    document.getElementById("hideID").style.visibility = "hidden";  //hide
+                    document.getElementById("showTasksID").style.visibility = "hidden";  //hide
+                    document.getElementById("goBackID").style.visibility = "hidden";  //hide
+                </script>
+
+    
+    
+    </body>
+</html>

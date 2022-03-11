@@ -1,0 +1,36 @@
+.TB{
+    background-color: rgb(23, 52, 68);
+    opacity: 0.8;
+    height: 752px;
+    width: 1535px;
+    position: absolute;
+    z-index: 11;
+}
+.TB2{
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 500px;
+    position: absolute;
+    z-index: 12;
+    padding: 50px;
+}
+
+.hideID{
+    margin-top: 550px;
+    margin-left: 515px;
+    position: absolute;
+    z-index: 13;
+}
+
+.mes{
+    z-index: 17;
+    position: absolute;
+    color: crimson;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
